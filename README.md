@@ -14,4 +14,4 @@ After learning how to do the above I successfully pulled a randomized quote and 
 
 It can be found here, 
 
-http://davidmonahan92.github.io/Lord-of-the-rings-quotes/
+http://davidmonahan92.github.io/LOTR-quotes/
