@@ -1,10 +1,12 @@
 function getQuote(){
-
-	fetch('../json/lotr-quotes.JSON')
+	const endpoint = 'https://jsonblob.com/api/jsonBlob/d41a400d-e440-11e8-9d8e-eb6fb7054aa9';
+	 
+	fetch(endpoint)
 	.then(response => response.json())
 	.then(data => {
-		console.log(data);
-		//displayQuote(`"${data.quote}"`);
+		const randomQuote = data[Math.floor(Math.random()*data.length)];
+
+		displayQuote(`"${randomQuote.quote}" - ${randomQuote.author}`);
 	})
 	.catch(() => console.log('An error has occurred'));
 }
