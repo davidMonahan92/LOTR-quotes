@@ -17,7 +17,7 @@ function displayQuote(quote) {
 	quoteText.textContent = quote; // .textContent removes the previous quote
 
 	const tweetButton = document.querySelector('.tweet');
-	tweetButton.setAttribute('href', `https://twitter.com/share?text=${quote} - Donald Trump`); //` `back ticks interpolate values & Strings
+	tweetButton.setAttribute('href', `https://twitter.com/share?text=${quote}`); //` `back ticks interpolate values & Strings
 }
 
 //Selects the New Quote when the button is selected
