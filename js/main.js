@@ -1,5 +1,6 @@
 function getQuote(){
-	const endpoint = 'https://jsonblob.com/api/jsonBlob/d41a400d-e440-11e8-9d8e-eb6fb7054aa9';
+	//New JSON file location
+	const endpoint = 'https://raw.githubusercontent.com/davidMonahan92/LOTR-quotes/master/json/lotr-quotes.JSON';
 	 
 	fetch(endpoint)
 	.then(response => response.json())
